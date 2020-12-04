@@ -1,10 +1,14 @@
 .main-nav {
-  height: 568px;  
-}
+  height: 568px;
+  width: 320px;
+  display: none;
+  background-color: yellow;
+  
 
-.main-nav ul {
-  list-style: none;
-  padding: 0;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 }
 
 .main-nav__toggle {
@@ -17,31 +21,22 @@
   border: 0;
   cursor: pointer;
   padding: 0;
-}
 
-.main-nav__toggle::before,
-.main-nav__toggle::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 19px;
-  height: 3px;
-  background-color: var(--grey);
-} 
+  &::before,
+  &::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 19px;
+    height: 3px;
+    background-color: @grey;
+  }
 
-.main-nav__toggle::before {
-  transform: rotate(45deg);
-}
+  &::before {
+    transform: rotate(45deg);
+  }
 
-.main-nav__toggle::after {
-  transform: rotate(-45deg);
-} 
-
-.main-nav__wrapper {
-  padding: 76px 25px 41px 25px;
-}
-
-.main-nav__user {
-  margin-bottom: 51px;
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
