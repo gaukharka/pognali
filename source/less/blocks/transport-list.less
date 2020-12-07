@@ -1,0 +1,29 @@
+.transport-list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.transport-list__icon--plane {
+  padding-right: 15px;
+}
+
+.transport-list__icon--bus {
+  padding-right: 13px;
+}
+
+.transport-list__icon--bike {
+  padding-right: 9px;
+}
+
+.transport-list__icon--active path {  // ask Julia
+  color: @basic-blue-light;
+}
+
+.transport-list__item:hover path {  // i think i don't need these, ask Julia
+  fill: @special-grey-hover; 
+}
+
+.transport-list__item:active svg {   //ask Julia
+  fill: red; 
+}

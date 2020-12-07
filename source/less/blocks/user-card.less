@@ -1,0 +1,89 @@
+.user-card {
+  margin-bottom: 9px;
+
+  img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 4px 9px @special-grey);
+    transform: scale(1.005);
+  }
+}
+
+.user-card__description {
+  background-color: @white; 
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.user-card__flags {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 13px;
+  // margin-top: -15px;
+}
+
+.user-card__flag {
+  padding-right: 20px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.user-card__name {
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "Bloger Sans Bold";
+  color: @basic-blue-light;
+  padding-bottom: 15px;
+  margin: 0;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+
+.user-card__name--offline::before {
+  background: red;
+}
+
+.user-card__name--online::before {
+  background: green;
+}
+
+.user-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 31px 14px 31px;
+}
+
+.user-card__item a {
+  padding-right: 3px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Bloger Sans Light";
+  color: @special-grey;
+}

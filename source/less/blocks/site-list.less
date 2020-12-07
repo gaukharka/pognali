@@ -1,13 +1,22 @@
 .site-list {
-  margin-bottom: 51px;
-  margin-top: 118px;
   text-align: center;
 }
 
 .site-list__item a {
   text-transform: uppercase;
   font-size: 30px;
-  font-weight: 500;
   line-height: 35px;
+  font-family: "Bloger Sans Medium";
   color: @basic-dark-navy;
+
+  &:hover {
+    color: @basic-yellow;
+  }
+
+  &:active {
+    color: @basic-yellow;
+    opacity: .3;
+  }
 }
+
+

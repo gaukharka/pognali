@@ -3,8 +3,31 @@
   align-items: center;
   justify-content: center;
   margin: 0;
+}
 
-  li {
-    padding-right: 26px;
+.social-list__link--facebook svg,
+.social-list__link--vkontakte svg,
+.social-list__link--instagram svg {
+  border-radius: 50%;
+  background-color: @basic-yellow;
+
+  &:hover {
+    background-color: @special-yellow-dark;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-list__link--facebook svg {
+  padding: 12px 17px;
+}
+
+.social-list__link--vkontakte svg {
+  padding: 17px 11px 16px 11px;
+}
+
+.social-list__link--instagram svg {
+  padding: 13px 13px 12px 14px;
 }

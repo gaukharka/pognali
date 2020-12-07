@@ -1,0 +1,61 @@
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-button {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Bloger Sans Bold";
+  color: @basic-blue-light;
+  padding: 22px 23px 22px 23px;
+  display: block;
+  border-radius: 10px;
+  background-color: @basic-yellow;
+
+  &:hover {
+    background-color: @special-yellow-dark;
+  }
+
+  &:active {
+    color: @basic-blue-light;
+    opacity: .3;
+  }
+}
+
+.section-button svg {
+  vertical-align: middle;
+  margin-left: 95px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Bloger Sans Bold";
+  color: @special-orange;
+  margin: 0;
+}

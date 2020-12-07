@@ -1,19 +1,17 @@
 .useful-links {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  padding-top: 245px;
-
 
   ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    margin: 0;
   }
 }
-
 
 .useful-links__contact-item a {
   display: flex;
@@ -21,15 +19,29 @@
 }
 
 .useful-links__link--phone svg {
-  padding: 12px 12px 11px 12px;
+  padding: 12px 11px 10px 11px;
   border-radius: 50%;
   background-color: @special-orange;
+
+  &:hover {
+    background-color: @special-orange-dark;
+  }
+
+  &:active {
+    opacity: 0.3;  // fix later
+  }
 }
 
 .useful-links__link--email svg {
-  padding: 13px 12px 13px 12px;
+  padding: 12px 11px 12px 10px;
   border-radius: 50%;
   background-color: @special-yellow-dark;
+
+  &:hover {
+    background-color: @special-orange;
+  }
+
+  &:active {
+    opacity: 0.3;  // fix later
+  }
 }
-
-

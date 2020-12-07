@@ -1,0 +1,75 @@
+.contacts-section {
+  background-color: @basic-dark-navy;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 320px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.contacts-section__block {
+  padding: 70px 0 25px 0;
+}
+
+.contacts-section__title {
+  text-align: center;
+  padding-bottom: 19px;
+}
+
+.contacts-section__description,
+.contacts-section__question {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Bloger Sans Lighter";
+  color: @white;
+  text-align: center;
+}
+
+.contacts-section__description {
+  padding: 0 35px 29px 35px;
+}
+
+.contacts-section__description-link {
+  color: @basic-yellow;
+  border-bottom: 1px solid @basic-yellow;
+
+  &:hover {
+    color: @special-orange;
+    border-bottom: 1px solid @special-orange;
+  }
+
+  &:active {
+    color: @special-orange;
+    border-bottom: 1px solid @special-orange;
+    opacity: 0.3;
+  }
+}
+
+.contacts-section__form {
+  padding-bottom: 29px;
+}
+
+.contacts-section__question {
+  padding: 0 20px 17px 20px;
+}
+
+.contacts-section__list a {
+  line-height: 22px;
+  color: @basic-yellow;
+
+  &:hover {
+    color: @special-yellow-dark;
+
+    path {
+      fill: @special-yellow-dark;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
