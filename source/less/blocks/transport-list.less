@@ -16,14 +16,72 @@
   padding-right: 9px;
 }
 
-.transport-list__icon--active path {  // ask Julia
-  color: @basic-blue-light;
+.transport-list__icon path {
+  fill: @special-grey;
+
+  &:hover {
+    fill: @special-grey-hover;
+  }
+
+  &:active {
+    background: @special-grey-down;
+    opacity: 0.3;
+  }
 }
 
-.transport-list__item:hover path {  // i think i don't need these, ask Julia
-  fill: @special-grey-hover; 
+// Active icons
+
+.transport-list__icon--active path {
+  fill: @basic-blue-light;
+
+  &:hover {
+    fill: @basic-blue-light;
+    opacity: 0.3;
+  }
+
+  &:active {
+    fill: @basic-blue-light;
+    background-color: @special-grey-down;
+    opacity: 0.3;
+  }
 }
 
-.transport-list__item:active svg {   //ask Julia
-  fill: red; 
+// Tooltip
+
+.transport-list__item {
+  position: relative;
+  display: inline-block;
+
+  .transport-list__item-tooltip {
+    position: absolute;
+    visibility: hidden;
+    padding: 18px 25px 25px 25px;
+    border-radius: 5px;
+    background-color: @special-blue-icon;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Bloger Sans Light";
+    color: @white;
+    text-align: center;
+    transition: opacity 0.3s;
+  }
+}
+
+.transport-list__item .transport-list__item-tooltip::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: rotate(180deg);
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: @special-blue-icon transparent transparent transparent;
+}
+
+.transport-list__item:hover .transport-list__item-tooltip {
+  visibility: visible;
+  opacity: 1;
+  top: 120%;
+  left: -200%;
 }

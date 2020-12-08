@@ -1,8 +1,16 @@
 .direction-card__description {
-  padding: 26px 24px 24px 24px;
+  position: relative;
+  padding: 0 24px 24px 24px;
   border-radius: 10px;
   background-color: @white;
   margin-bottom: 11px;
+  margin-top: -15px;
+  z-index: 1;
+
+  svg {
+    margin-top: -12px;
+    padding-bottom: 8px;
+  }
 }
 
 .direction-card__description-block {
@@ -38,7 +46,8 @@
   margin: 0;
 
   svg {
-    padding-right: 5px;
+    padding: 0 5px 0 0;
     vertical-align: middle;
+    margin: 0;
   }
 }

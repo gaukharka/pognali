@@ -1,23 +1,26 @@
 .user-section {
+  position: relative;
+  background-image: url('../../img/group-background.png');
+  background-repeat: no-repeat;
   background-color: @basic-dark-navy;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   width: 320px;
+  margin-bottom: -30px;
+  z-index: 4;
 
   ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
   }
 }
 
 .user-section__block {
-  padding-bottom: 50px;
-}
-
-.user-section__list {
-  padding-bottom: 14px;
+  padding: 98px 0 40px 0;
 }
 
 .user-section__block-title {
-  padding: 68px 29px 54px 25px;
+  padding: 0 29px 54px 25px;
 
   p {
     font-size: 16px;
@@ -38,4 +41,8 @@
 
 .user-section__description-bold {
   font-family: "Bloger Sans Bold";
+}
+
+.user-section__list {
+  padding-bottom: 14px;
 }

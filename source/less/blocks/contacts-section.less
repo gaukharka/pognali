@@ -1,18 +1,21 @@
 .contacts-section {
+  position: relative;
   background-color: @basic-dark-navy;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 320px;
+  margin-bottom: -30px;
+  z-index: 2;
 
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 0;
   }
 }
 
 .contacts-section__block {
-  padding: 70px 0 25px 0;
+  padding: 100px 0 35px 0;
 }
 
 .contacts-section__title {
@@ -72,4 +75,46 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+// Form 
+
+.contacts-section__form {
+  // display: flex;
+  // justify-content: flex-start;
+}
+
+.contacts-section__form input[type="email"] {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Bloger Sans Bold";
+  color: @special-grey;
+  box-sizing: border-box;
+  width: 225px;
+  padding: 21px 20px 20px 25px;
+  border-width: 0;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 11px 20px 13px 0;
+}
+
+.contacts-section__form-button {
+  position: relative;
+  padding: 22px 24px;
+  background-color: @basic-yellow;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  margin-left: -45px;
+  z-index: 1;
+}
+
+.contacts-section__form input[type="email"]:hover {
+  background-color: @basic-grey;
+}
+
+.contacts-section__form input[type="email"]:active {
+  border: 2px solid @white;
+  background-color: @basic-dark-navy;
 }
