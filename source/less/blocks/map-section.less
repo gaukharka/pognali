@@ -1,12 +1,25 @@
+.map-section {
+  position: relative;
+}
+
 .map-section__block {
   background-color: @basic-yellow;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 320px;
+  background-position: center;
   position: relative;
   margin-bottom: -30px;
   z-index: 1;
   padding: 70px 0 40px 0;
+}
+
+.map-section__wrapper {
+  .wrapper();
+}
+
+.map-section__wrapper-map {
+  .wrapper();
+  padding: 0;
 }
 
 .map-section__block-mark {
@@ -19,7 +32,7 @@
 .map-section__street {
   font-size: 16px;
   line-height: 22px;
-  font-family: "Bloger Sans Bold";
+  font-weight: 700;
   color: @basic-blue-light;
   margin-right: 25px;
   text-transform: uppercase;

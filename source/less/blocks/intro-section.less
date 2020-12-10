@@ -1,7 +1,8 @@
 .intro-section {
   background-image: url('../../img/globe-back-mobile.jpg');
   background-repeat: no-repeat;
-  width: 320px;
+  background-color: @basic-blue;
+  background-position: top center;
 }
 
 .intro-section__block {
@@ -14,17 +15,29 @@
     position: absolute;
     width: 200px;
     height: 270px;
-    top: 250px;
+    bottom: 0;
     left: 55px;
     background-image: url(../../img/traveller-mobile.png);
     background-repeat: no-repeat;
   }
 }
 
+.intro-section__wrapper,
+.intro-section__steps-wrapper {
+  .wrapper();
+}
+
+.intro-section__review-wrapper {
+  .wrapper();
+  padding: 0 50px;
+}
+
+
+
 .intro-section__slogan {
   font-size: 36px;
   line-height: 40px;
-  font-family: "Bloger Sans Bold";
+  font-weight: 700;
   color: @white;
   text-align: center;
   padding-bottom: 265px;
@@ -40,7 +53,7 @@
 .intro-section__review {
   position: relative;
   background-color: @basic-blue;
-  padding: 48px 90px 110px 25px;
+  padding: 48px 0 110px;
   margin-top: -22px;
   margin-bottom: -80px;
 
@@ -49,26 +62,31 @@
     line-height: 22px;
     color: @white;
     margin: 0;
+    max-width: 170px;
   }
 }
 
 .intro-section__review-text {
   padding-bottom: 18px;
-  font-family: "Bloger Sans Lighter";
+  font-weight: 300;
 }
 
 .intro-section__review-author {
-  font-family: "Bloger Sans Bold";
+  font-weight: 700;
 }
 
 .intro-section__steps {
   background-color: @basic-dark-navy;
+
+  ol {
+    padding-left: 0;
+  }
 }
 
 .intro-section__steps-block {
   position: relative;
   z-index: 8;
-  padding: 0 25px 39px 25px;
+  padding-bottom: 39px;
   margin: 0;
   counter-reset: list1;
 
@@ -90,9 +108,9 @@
 .intro-section__item {
   font-size: 18px;
   line-height: 18px;
-  font-family: "Bloger Sans Bold";
+  font-weight: 700;
   color: @basic-blue;
-  padding: 22px 20px 32px 24px;
+  padding: 22px 40px 32px 24px;
   border-radius: 10px;
 }
 

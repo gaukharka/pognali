@@ -51,20 +51,20 @@
 .transport-list__item {
   position: relative;
   display: inline-block;
+}
 
-  .transport-list__item-tooltip {
-    position: absolute;
-    visibility: hidden;
-    padding: 18px 25px 25px 25px;
-    border-radius: 5px;
-    background-color: @special-blue-icon;
-    font-size: 20px;
-    line-height: 20px;
-    font-family: "Bloger Sans Light";
-    color: @white;
-    text-align: center;
-    transition: opacity 0.3s;
-  }
+.transport-list__item-tooltip {
+  position: absolute;
+  visibility: hidden;
+  padding: 18px 25px 25px 25px;
+  border-radius: 5px;
+  background-color: @special-blue-icon;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @white;
+  text-align: center;
+  transition: opacity 0.3s;
 }
 
 .transport-list__item .transport-list__item-tooltip::after {

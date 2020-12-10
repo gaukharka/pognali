@@ -3,13 +3,17 @@
   background-color: @white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  width: 320px;
+  background-position: top center;
   margin-top: -30px;
 
   ul {
     list-style: none;
     padding-left: 0;
   }
+}
+
+.page-footer__wrapper {
+  .wrapper();
 }
 
 .page-footer__block {
@@ -31,22 +35,9 @@
   align-content: center;
   justify-content: space-between;
   position: relative;
-
-  a:hover {
-    opacity: 0.3;
-  }
-
-  a:active {
-    opacity: 0.6;
-  }
-}
-
-.page-footer__text {
-  font-size: 16px;
-  line-height: 16px;
-  font-family: "Bloger Sans Lighter";
-  color: @special-grey;
-
+  border-top: 1px solid @special-grey-footer;
+  padding-top: 20px;
+  
   &:hover {
     opacity: 0.3;
   }
@@ -54,13 +45,11 @@
   &:active {
     opacity: 0.6;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 270px;
-    top: -15px;
-    left: 0;
-    border-bottom: 1px solid @special-grey-footer;
-  }
+.page-footer__text {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  color: @special-grey;
 }

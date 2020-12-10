@@ -1,11 +1,15 @@
 .pricelist-section {
   position: relative;
   background-color: @basic-grey;
+  background-position: top center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 320px;
   margin-bottom: -30px;
   z-index: 3;
+}
+
+.pricelist-section__wrapper {
+  .wrapper();
 }
 
 .pricelist-section__block {
@@ -54,23 +58,13 @@
     content: "";
     position: absolute;
     width: 190px;
-    // top: -10px;
     left: 0;
     border-bottom: 1px solid @special-grey-line;
   }
-
-  // &:last-child::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 240px;
-  //   top: 50px;
-  //   left: 0;
-  //   border-bottom: 1px solid @special-grey-line;
-  // }
 }
 
 .pricelist-section__title {
-  padding: 40px 163px 56px 25px;
+  padding: 40px 110px 56px 25px;
 
   &::before {
     content: "";
@@ -92,9 +86,10 @@
 }
 
 .pricelist-section__button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 16px;
-  font-family: "Bloger Sans Bold";
+  font-weight: 700;
   color: @basic-blue-light;
   margin: 0 auto;
   padding: 0 25px;

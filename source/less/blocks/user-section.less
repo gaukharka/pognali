@@ -3,9 +3,9 @@
   background-image: url('../../img/group-background.png');
   background-repeat: no-repeat;
   background-color: @basic-dark-navy;
+  background-position: top center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 320px;
   margin-bottom: -30px;
   z-index: 4;
 
@@ -13,6 +13,14 @@
     list-style: none;
     padding-left: 0;
   }
+}
+
+.user-section__card {
+  margin-bottom: 9px;
+}
+
+.user-section__wrapper {
+  .wrapper();
 }
 
 .user-section__block {
@@ -36,13 +44,14 @@
 
 .user-section__description {
   padding-bottom: 18px;
-  font-family: "Bloger Sans Lighter";
+  font-weight: 400;
 }
 
 .user-section__description-bold {
-  font-family: "Bloger Sans Bold";
+  font-weight: 700;
 }
 
 .user-section__list {
   padding-bottom: 14px;
 }
+

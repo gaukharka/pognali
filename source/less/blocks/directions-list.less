@@ -1,9 +1,12 @@
+.directions-list {
+  background-position: top center;
+}
+
 .direction-card__description {
   position: relative;
-  padding: 0 24px 24px 24px;
+  // padding-bottom: 24px;
   border-radius: 10px;
   background-color: @white;
-  margin-bottom: 11px;
   margin-top: -15px;
   z-index: 1;
 
@@ -13,41 +16,7 @@
   }
 }
 
-.direction-card__description-block {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
+.directions-list__item {
+  margin-bottom: 11px;
 }
 
-.direction-card__title {
-  font-size: 21px;
-  line-height: 21px;
-  font-family: "Bloger Sans Bold";
-  color: @black;
-  margin: 0;
-}
-
-.direction-card__text {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Bloger Sans Medium";
-  color: @special-grey;
-  opacity: 0.3;
-  margin: 0;
-  // padding-right: 60px;
-}
-
-.direction-card__user-number {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Bloger Sans Medium";
-  color: @basic-blue;
-  opacity: 0.3;
-  margin: 0;
-
-  svg {
-    padding: 0 5px 0 0;
-    vertical-align: middle;
-    margin: 0;
-  }
-}

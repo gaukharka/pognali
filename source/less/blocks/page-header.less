@@ -1,6 +1,64 @@
-.page-header__logo a {
-  display: block;
+.page-header__logo {
   position: fixed;
+  top: 25px;
+  left: 0;
+  right: 0;
+  color: @white;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  z-index: 10;
+  .wrapper();
+
+  &--onscroll {
+    color: black;
+    background-color: @white;
+  }
+  
+  &--nav-opened {
+    color: black;
+    background-color: @white;
+  
+    .main-nav {
+      transform: translateX(0);
+    }
+  }
+}
+
+.page-header__toggle {
+  .wrapper();
+  padding: 0;
+  position: absolute;
+  top: 8x;
+  right: 30px;
+  width: 24px;
+  height: 24px;
   background-color: transparent;
-  padding: 27px 5px 31px 25px;
+  border: 0;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: @grey;
+  }
+
+  &::before {
+    margin-top: 5px;
+  }
+
+  &::after {
+    margin-top: -5px;
+  }
+
+  // &::before {
+  //   transform: rotate(45deg);
+  // }
+
+  // &::after {
+  //   transform: rotate(-45deg);
+  // }
 }
