@@ -14,12 +14,12 @@
 
 .pricelist-section__block {
   position: relative;
-  padding: 40px 0;
+  padding: 38px 0;
 }
 
 .pricelist-section__lists ul {
   list-style: none;
-  padding: 0 0 14px 25px;
+  padding: 0 0 24px 25px;
   margin: 0;
 }
 
@@ -37,10 +37,10 @@
       counter-increment: list1;
       content: counter(list1);
       color: @white;
-      width: 30px;
-      height: 30px;
       text-align: center;
-      padding: 12px 6px 0 5px;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 10px 13px 9px 13px;
       border-radius: 50%;
       background-color: @special-orange;
     }
@@ -51,7 +51,7 @@
   position: relative;
   font-size: 16px;
   line-height: 16px;
-  font-family: "Bloger Sans Lighter";
+  font-weight: 300;
   color: @special-grey;
 
   &::before {
@@ -59,12 +59,13 @@
     position: absolute;
     width: 190px;
     left: 0;
+    top: -5px;
     border-bottom: 1px solid @special-grey-line;
   }
 }
 
 .pricelist-section__title {
-  padding: 40px 110px 56px 25px;
+  padding: 45px 110px 47px 25px;
 
   &::before {
     content: "";
@@ -82,7 +83,7 @@
 }
 
 .pricelist-section__price {
-  padding-bottom: 32px;
+  padding-bottom: 19px;
 }
 
 .pricelist-section__button {
@@ -93,6 +94,10 @@
   color: @basic-blue-light;
   margin: 0 auto;
   padding: 0 25px;
+  border-top: 1px solid @special-grey-line;
+  width: 190px;
+  padding-top: 30px;
+
 
   &:hover {
     opacity: 0.7;

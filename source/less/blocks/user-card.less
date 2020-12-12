@@ -1,20 +1,42 @@
-.user-card {
+// .user-card:hover {
+//     box-shadow: 0 0 5px 5px @special-grey;
+// }
 
-  img {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
+// .user-card img {
+//   border-top-right-radius: 10px;
+//   border-top-left-radius: 10px;
+
+//   &:hover {
+//     transform: scale(1.005);
+//   }
+// }
+
+.user-card__image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.user-card {
+  display: inline-block;
+  overflow: hidden;
 
   &:hover {
-    filter: drop-shadow(0 4px 9px @special-grey);
-    transform: scale(1.005);
+    box-shadow: 0 0 5px 5px @special-grey;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+
+    img {
+      transform: scale(1.005);
+      width: 100%;
+    }
   }
 }
 
 .user-card__description {
   position: relative;
   background-color: @white; 
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 15px 20px;
   text-align: center;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -25,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   
   svg {
     margin-top: -40px;
@@ -46,6 +68,7 @@
   font-weight: 700;
   color: @basic-blue-light;
   margin: 0 0 15px 0;
+  padding-right: 5px;
 
   &:hover {
     opacity: 0.3;
@@ -57,8 +80,8 @@
 
   &::before {
     content: "";
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     top: 0;
     left: 0;
     border-radius: 50%;
@@ -80,13 +103,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 31px 14px 31px;
+  margin: 0 20px 14px 31px;
 }
 
-.user-card__item a {
+.user-card__item {
   margin-right: 3px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  color: @special-grey;
+
+  a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: @special-grey;
+  }
 }

@@ -1,34 +1,37 @@
-.page-header__logo {
+.page-header {
   position: fixed;
-  top: 25px;
+  top: 0;
   left: 0;
   right: 0;
-  color: @white;
+  height: 73px;
   transition: color 0.3s ease, background-color 0.3s ease;
   z-index: 10;
-  .wrapper();
 
   &--onscroll {
-    color: black;
     background-color: @white;
   }
-  
+
   &--nav-opened {
-    color: black;
     background-color: @white;
-  
-    .main-nav {
+
+    .page-header__nav {
       transform: translateX(0);
     }
   }
 }
 
-.page-header__toggle {
+.page-header__block {
+  position: relative;
   .wrapper();
+  padding-top: 25px;
+}
+
+.page-header__toggle {
   padding: 0;
   position: absolute;
-  top: 8x;
-  right: 30px;
+  top: 25px;
+  right: 0;
+  left: 270px;
   width: 24px;
   height: 24px;
   background-color: transparent;
@@ -41,6 +44,7 @@
     position: absolute;
     top: 9px;
     right: 0;
+    left: 0;
     width: 24px;
     height: 2px;
     background-color: @grey;

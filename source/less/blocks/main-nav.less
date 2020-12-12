@@ -1,10 +1,12 @@
 .main-nav {
   // display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   background-position: top center;
   background-color: @white;
-  padding-bottom: 41px;
-  transform: translateX(-100%);
+  padding-bottom: 33px;
+  transform: translateX(175%);
   transition: transform 0.3s ease;
 
   ul {
@@ -18,7 +20,7 @@
 }
 
 .main-nav__list {
-  margin-top: 118px;
+  margin-top: 45px;
   margin-bottom: 51px;
 }
 
@@ -31,9 +33,9 @@
 }
 
 .main-nav__social li {
-  padding-right: 26px;
+  padding-right: 21px;
 
-  :last-child {
+  &:last-child {
     padding-right: 0;
   }
 }
