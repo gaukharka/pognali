@@ -1,0 +1,33 @@
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.social-list__link:hover {
+  opacity: 0.6;
+}
+
+.social-list__link:active {
+  opacity: 0.3;
+}
+
+.social-list__link--footer {
+  width: 45px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: @basic-yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: @special-yellow-dark;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

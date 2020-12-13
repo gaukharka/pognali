@@ -1,0 +1,139 @@
+.intro-section {
+  background-image: url('../../img/globe-back-mobile.jpg');
+  background-repeat: no-repeat;
+  background-color: @basic-blue;
+  background-position: top center;
+}
+
+// .intro-section__slogan {
+//   padding-top: 70px;
+// }
+.intro-section__block {
+  position: relative;
+  z-index: 9;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 275px;
+    bottom: 0;
+    left: 55px;
+    background-image: url(../../img/traveller-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.intro-section__wrapper,
+.intro-section__steps-wrapper {
+  .wrapper();
+}
+
+.intro-section__review-wrapper {
+  .wrapper();
+  padding: 0 50px;
+}
+
+
+
+.intro-section__slogan {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: @white;
+  text-align: center;
+  padding-top: 95px;
+  padding-bottom: 240px;
+  margin: 0;
+}
+
+.intro-section__useful-links {
+  position: relative;
+  padding-top: 0;
+  z-index: 10;
+}
+
+.intro-section__review {
+  position: relative;
+  background-color: @basic-blue;
+  padding: 48px 0 110px;
+  margin-top: -22px;
+  margin-bottom: -80px;
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    color: @white;
+    margin: 0;
+    max-width: 170px;
+  }
+}
+
+.intro-section__review-text {
+  padding-bottom: 18px;
+  font-weight: 300;
+}
+
+.intro-section__review-author {
+  font-weight: 700;
+}
+
+.intro-section__steps {
+  background-color: @basic-dark-navy;
+
+  ol {
+    padding-left: 0;
+  }
+}
+
+.intro-section__steps-block {
+  position: relative;
+  z-index: 8;
+  padding-bottom: 39px;
+  margin: 0;
+  counter-reset: list1;
+
+  li {
+    list-style-type: none;
+    margin-top: -14px;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      counter-increment: list1;
+      content: counter(list1);
+      right: 0;
+      color: @white;
+      padding-left: 30px;
+    }
+  }
+}
+
+.intro-section__item {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @basic-blue;
+  padding: 22px 20px 36px 24px;
+  border-radius: 10px;
+
+  &:last-child {
+    padding: 22px 20px 23px 24px;
+  }
+}
+
+.intro-section__item--special-orange {
+  background-color: @special-orange;
+}
+
+.intro-section__item--orange {
+  background-color: @basic-orange;
+}
+
+.intro-section__item--special-yellow {
+  background-color: @special-yellow-dark;
+}
+
+.intro-section__item--yellow {
+  background-color: @basic-yellow;
+}

@@ -1,0 +1,45 @@
+.main-nav {
+  // display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-position: top center;
+  background-color: @white;
+  padding-bottom: 33px;
+  transform: translateX(175%);
+  transition: transform 0.3s ease;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.main-nav__wrapper {
+  .wrapper();
+}
+
+.main-nav__list {
+  margin-top: 45px;
+  margin-bottom: 51px;
+}
+
+.main-nav__social a:hover {
+  opacity: 0.6;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__social li {
+  padding-right: 21px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.main-nav__user {
+  margin-bottom: 51px;
+}

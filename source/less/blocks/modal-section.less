@@ -1,0 +1,81 @@
+.modal-section {
+  display: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: lightgrey;
+  background-position: top center;
+  width: 270px;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 23px;
+  }
+}
+
+.modal-section__wrapper {
+  .wrapper();
+}
+
+.modal-section__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @special-orange;
+  text-align: center;
+  padding: 34px 0 28px 0;
+  margin: 0;
+}
+
+.modal-section__list {
+  position: relative;
+}
+
+.modal-section__item {
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Bloger Sans Lighter";
+  color: @special-grey;
+  padding-bottom: 22px;
+  padding-right: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 219px;
+    top: -15px;
+    left: 0;
+    border-bottom: 1px solid @special-grey-line;
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    width: 219px;
+    top: 60px;
+    left: 0;
+    border-bottom: 1px solid @special-grey-line;
+  }
+}
+
+.modal-section__button {
+  display: block;
+  width: 260px;
+  padding: 21px 5px;
+  background-color: @special-grey-modal;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @basic-blue-light;
+
+  &:hover {
+    background-color: @basic-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

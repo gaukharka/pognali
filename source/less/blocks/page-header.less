@@ -1,0 +1,68 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 73px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  z-index: 10;
+
+  &--onscroll {
+    background-color: @white;
+  }
+
+  &--nav-opened {
+    background-color: @white;
+
+    .page-header__nav {
+      transform: translateX(0);
+    }
+  }
+}
+
+.page-header__block {
+  position: relative;
+  .wrapper();
+  padding-top: 25px;
+}
+
+.page-header__toggle {
+  padding: 0;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 270px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: @grey;
+  }
+
+  &::before {
+    margin-top: 5px;
+  }
+
+  &::after {
+    margin-top: -5px;
+  }
+
+  // &::before {
+  //   transform: rotate(45deg);
+  // }
+
+  // &::after {
+  //   transform: rotate(-45deg);
+  // }
+}
