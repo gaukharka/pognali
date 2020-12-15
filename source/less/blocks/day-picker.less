@@ -1,0 +1,28 @@
+.day-picker {
+
+}
+
+.day-picker__weekly {
+  display: flex;
+  justify-content: center;
+}
+
+.day-picker__item button {
+  width: 33px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: inherit;
+  font-weight: 400;
+  border: 1px solid @special-grey;
+}
+
+.day-picker__item.day-picker__item--disabled button {
+  color: @special-grey;
+  background-color: @white;
+}
+
+.day-picker__item--chosen button {
+  background-color: @basic-blue-light;
+  color: @white;
+}
