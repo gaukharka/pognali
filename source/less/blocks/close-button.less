@@ -1,0 +1,32 @@
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: @special-grey-background;
+  border: 1px solid @basic-grey-background;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: relative;
+  top: 0;
+  right: 21px;
+  right: 21px;
+  width: 21px;
+  height: 3px;
+  background-color: @basic-grey-background;
+} 
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}

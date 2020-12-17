@@ -1,16 +1,20 @@
 .form-plans {
   position: relative;
+  background-color: @special-background-grey;
+  background-position: center;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background-position: center;
-  background-color: lightyellow;
-  padding-top: 28px;
-  padding-bottom: 59px;
+  margin-top: -30px;
+  z-index: 2;
 
   ol {
     padding-left: 0;
     margin: 0;
   }
+}
+
+.form-plans__block {
+  padding: 28px 0 59px;
 }
 
 .form-plans__list {
@@ -27,9 +31,6 @@
       counter-increment: list1;
       content: counter(list1) ". ";
       color: @basic-blue-light;
-      // padding-left: 30px;
-    //   display: flex;
-    // justify-content: space-between;
     }
   }
 }
@@ -38,12 +39,16 @@
   .wrapper();
 }
 
+
 .form-plans__title {
+  padding-bottom: 20px;
+}
+
+.form-plans__item-title {
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   color: @basic-blue-light;
-  margin: 0;
 }
 
 .form-plans__description {
@@ -51,6 +56,7 @@
   line-height: 14px;
   font-weight: 500;
   color: @basic-blue-light;
+  text-transform: uppercase;
 }
 
 .form-plans__item {
@@ -58,4 +64,18 @@
   background-color: @white;
   border-radius: 10px;
   margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-plans__item-block {
+  margin-bottom: 24px;
+}
+
+.form-plans__link {
+  color: @black;
+  opacity: 0.3;
+  text-transform: uppercase;
 }

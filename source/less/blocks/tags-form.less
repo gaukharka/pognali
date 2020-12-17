@@ -1,8 +1,5 @@
-// .tags-form {
-
-// }
-
 .tags-form__text-area {
+  position: relative;
   width: 100%;
   height: 89px;
   resize: none;
@@ -10,10 +7,22 @@
   background-color: @special-grey-background;
   box-sizing: border-box;
   border-radius: 10px;
-  margin-top: 9px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: @special-grey;
   padding: 26px;
+  margin-top: -10px;
+  z-index: 6;
+}
+
+.tags-form__label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @basic-blue-light;
+  padding: 0 10px;
+  background-color: @special-grey-background;
+  z-index: 7;
 }
