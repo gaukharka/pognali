@@ -42,6 +42,14 @@
   border: 1px solid @special-grey-border;
   border-radius: 4px;
   margin-bottom: 20px;
+
+  &:hover {
+    border: 1px solid @grey-qty-hov;
+  }
+
+  &:active {
+    border: 1px solid @basic-blue;
+  }
 }
 
 .planning-list__input-input {
@@ -56,13 +64,18 @@
   background-color: @white;
 }
 
+.planning-list__button-sign:hover {
+  stroke: @grey-qty-hov;
+}
+
+.planning-list__button-sign:active {
+  stroke: @basic-blue;
+}
+
 .planning-list__checkbox {
   padding-bottom: 28px;
-  position: relative;
-  display: block;
   cursor: pointer;
   user-select: none;
-  background-color: red;
 
   label {
     font-size: 15px;
@@ -74,22 +87,22 @@
 
 // checkbox
 
-.planning-list__checkbox-checkbox::before {
+.planning-list__checkbox-checkbox + label::before {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 3px;
   left: 33px;
   width: 46px;
   height: 46px;
   background-image: url("../../img/checkbox_off.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  // background-position: 0 0;
   // opacity: 0.7;
 }
 
-.planning-list__checkbox-checkbox:hover + label::before {
-  opacity: 1;
-}
+// .planning-list__checkbox-checkbox:hover + label::before {
+//   opacity: 1;
+// }
 
 // checkmark
 

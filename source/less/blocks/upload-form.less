@@ -19,7 +19,7 @@
     left: 0;
     width: 100px;
     height: 100px;
-    border: 3px solid @special-orange-level;
+    border: 3px solid @special-orange;
     border-radius: 50%;
     box-sizing: border-box;
   }
@@ -65,6 +65,13 @@
   input {
     display: none;
   }
+
+  &:hover {
+    background-color: @basic-grey-photo;
+  }
+
+  &:active {
+    background-color: @special-background-grey;
+    opacity: 0.3;
+  }
 }
-
-

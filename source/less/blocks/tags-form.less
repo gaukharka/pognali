@@ -11,9 +11,19 @@
   line-height: 18px;
   font-weight: 400;
   color: @special-grey;
+  // opacity: 0.6;          //how to do ?
   padding: 26px;
   margin-top: -10px;
   z-index: 6;
+
+  &:hover {
+    border: 1px solid @basic-grey-border-tags;
+  }
+
+  &:active {
+    border: 1px solid @basic-blue;
+    opacity: 0;
+  }
 }
 
 .tags-form__label {

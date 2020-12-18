@@ -1,0 +1,75 @@
+.dropdown-add__button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+
+  // downmenu dot
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 19px;
+    left: -60px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid @special-grey-border;
+    box-sizing: border-box;
+    background-color: @special-grey-background;
+
+    &:hover {
+      background-color: @special-background-grey;
+    }
+  }
+}
+
+.dropdown-add__button-text {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @basic-blue-light;
+  border-radius: 4px;
+  padding: 12px 7px 11px 11px;
+  background-color: @special-grey-background;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: flex;
+  width: 200px;
+
+  &:hover {
+    background-color: @special-background-grey;
+  }
+
+  &:active {
+    background-color: @special-background-grey;
+  }
+
+  // downmenu arrow
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 3px;
+    left: 45px;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/dropdown_plus.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      stroke: @black;
+      opacity: 0.3;
+    }
+
+    &:active {
+      stroke: @black;
+      opacity: 0.1;
+    }
+  }
+}
