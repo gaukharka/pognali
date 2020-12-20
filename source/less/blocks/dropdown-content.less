@@ -1,35 +1,37 @@
-.dropdown-content {
-  display: none;
-  margin-top: -24px;
+.dropdown__content {
+  // display: none;
+  margin-top: -22px;
+  margin-bottom: 20px;
 }
 
-.dropdown-content__list-countries {
+.dropdown__content-list-countries {
   padding: 20px;
 }
 
 // Letters
 
-.dropdown-content__item button {
-  width: 43px;
+.dropdown__content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.dropdown__content-item button {
+  width: 44px;
   height: 41px;
   font-size: 14px;
   line-height: 18px;
   font-family: inherit;
   font-weight: 400;
-  border: 1px solid @special-grey;
-  // border: none;
+  border: 1px solid @special-grey-border;
   background-color: transparent;
   padding: 0;
 }
 
-.dropdown-content__list-block {
-  display: flex;
-  justify-content: center;
-}
-
 // Coгntries
 
-.dropdown-content__name button {
+.dropdown__content-name button {
   font-size: 16px;
   line-height: 22px;
   font-family: inherit;
@@ -37,5 +39,13 @@
   color: @special-grey;
   border: none;
   background-color: transparent;
-  padding: 0 0 0 19px;
+  padding: 0 19px;
+}
+
+.dropdown__content-item--current {
+  background-color: @special-grey-background;
+}
+
+.dropdown__content-country li {
+  padding-bottom: 4px;
 }

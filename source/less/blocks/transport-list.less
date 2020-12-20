@@ -11,41 +11,11 @@
 }
 
 .transport-list__icon--bus {
-  padding-right: 13px;
+  padding-right: 12px;
 }
 
 .transport-list__icon--bike {
   padding-right: 9px;
-}
-
-.transport-list__icon path {
-  fill: @special-grey;
-
-  &:hover {
-    fill: @special-grey-hov;
-  }
-
-  &:active {
-    background: @special-grey-down;
-    opacity: 0.3;
-  }
-}
-
-// Active icons
-
-.transport-list__icon--active path {
-  fill: @basic-blue-light;
-
-  &:hover {
-    fill: @basic-blue-light;
-    opacity: 0.3;
-  }
-
-  &:active {
-    fill: @basic-blue-light;
-    background-color: @special-grey-down;
-    opacity: 0.3;
-  }
 }
 
 // Tooltip
@@ -88,7 +58,7 @@
   left: -200%;
 }
 
-// Form 
+// Transport Buttons (Form & Catalog)
 
 .transport-list__item-button {
   width: 32px;
@@ -98,4 +68,33 @@
   border-radius: 50%;
   border: none;
   background-color: @white;
+  fill: @special-icon-grey;
+
+  &:hover path {
+    fill: @special-grey-hov;
+    opacity: 1;
+  }
+
+  &:active path {
+    background-color: @special-grey-down;
+    opacity: 0.3;
+    fill: @basic-blue-light;
+  }
+}
+
+.transport-list__active {
+  path {
+    fill: @basic-blue-light;
+  }
+
+  &:hover path {
+    fill: @basic-blue-light;
+    opacity: 0.7;
+  }
+
+  &:active path {
+    fill: @basic-blue-light;
+    background-color: @special-grey-down;
+    opacity: 0.3;
+  }
 }

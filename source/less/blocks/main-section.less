@@ -5,24 +5,33 @@
 }
 
 .main-section__block {
-  // position: relative;
-  // z-index: 9;
+  position: relative;
   background-color: @basic-blue;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-.main-section__wrapper {
+.main-section__block-wrapper {
   .wrapper();
 }
 
 .main-section__block-title {
+  position: relative;
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
   color: @white;
-  text-align: center;
   padding-top: 95px;
-  padding-bottom: 24px;
+  padding-bottom: 14px;
   margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 214px;
+    top: 147px;
+    left: 0;
+    border-bottom: 5px solid orange;
+    border-radius: 5px;
+  }
 }

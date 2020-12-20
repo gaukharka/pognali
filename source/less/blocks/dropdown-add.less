@@ -1,4 +1,4 @@
-.dropdown-add__button {
+.dropdown__add {
   border: none;
   background-color: transparent;
   margin: 0;
@@ -12,14 +12,14 @@
   &::after {
     content: "";
     position: relative;
-    top: 19px;
+    top: 17px;
     left: -60px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
     border: 1px solid @special-grey-border;
     box-sizing: border-box;
-    background-color: @special-grey-background;
+    background-color: transparent;
 
     &:hover {
       background-color: @special-background-grey;
@@ -27,7 +27,7 @@
   }
 }
 
-.dropdown-add__button-text {
+.dropdown__add-text {
   position: relative;
   font-size: 14px;
   line-height: 18px;
@@ -54,7 +54,7 @@
   &::after {
     content: "";
     position: relative;
-    top: 3px;
+    top: 2px;
     left: 45px;
     width: 20px;
     height: 20px;

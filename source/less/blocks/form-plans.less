@@ -26,6 +26,7 @@
 
   li {
     list-style-type: none;
+    display: flex;
 
     &::before {
       counter-increment: list1;
@@ -49,6 +50,8 @@
   line-height: 16px;
   font-weight: 700;
   color: @basic-blue-light;
+  padding-bottom: 20px;
+  padding-left: 5px;
 }
 
 .form-plans__description {
@@ -57,6 +60,11 @@
   font-weight: 500;
   color: @basic-blue-light;
   text-transform: uppercase;
+  padding-bottom: 5px;
+
+  &:last-child {
+    padding-bottom: 24px;
+  }
 }
 
 .form-plans__item {
@@ -71,7 +79,7 @@
 }
 
 .form-plans__item-block {
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
 }
 
 .form-plans__link {
