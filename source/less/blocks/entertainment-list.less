@@ -58,29 +58,26 @@
 
   &:active {
     border: 1px solid @basic-blue;
-    // &::placeholder {
-    //   opacity: 0;               //   Не совсемя поняла как изменить непрозрачность при hover 
-    // }
   }
 }
 
 // Vertical line
 
-.planning-list__description-line {
+.entertainment-list__item:first-child {
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
     width: 283px;
-    top: 260px;
+    top: 153px;
     left: -155px;
     border-bottom: 2px solid @basic-blue;
     transform: rotate(90deg);
   }
 }
 
-// Horizontal line  
+// Horizontal line
 
 .entertainment-list__item label {
   position: relative;
@@ -95,17 +92,17 @@
   }
 }
 
-// Horizontal buttons
-.entertainment-list__item img {
+// Horizontal buttons 
+.entertainment-list__item {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     width: 6px;
     height: 6px;
     top: 20px;
-    left: -140px;
+    left: 140px;
     border-radius: 50%;
     border-color: @basic-blue;
   }
