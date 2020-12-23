@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   text-align: left;
+  margin-bottom: 24px;
 
   // downmenu dot
 
@@ -13,7 +14,7 @@
     content: "";
     position: relative;
     top: 17px;
-    left: -60px;
+    left: -53px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -23,6 +24,7 @@
 
     &:hover {
       background-color: @special-background-grey;
+      opacity: 0.3;
     }
   }
 }
@@ -31,15 +33,17 @@
   position: relative;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: @basic-blue-light;
+  letter-spacing: 0.1em;
+  font-family: inherit;
   border-radius: 4px;
   padding: 12px 7px 11px 11px;
   background-color: @special-grey-background;
   text-transform: uppercase;
   white-space: nowrap;
   display: flex;
-  width: 200px;
+  width: 202px;
 
   &:hover {
     background-color: @special-background-grey;
@@ -55,12 +59,13 @@
     content: "";
     position: relative;
     top: 2px;
-    left: 45px;
+    left: 25px;
     width: 20px;
     height: 20px;
     background: url("../../img/dropdown_plus.svg");
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.2;
+    stroke: @black;
 
     &:hover {
       stroke: @black;

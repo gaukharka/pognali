@@ -5,37 +5,64 @@
 }
 
 .day-picker__item button {
+  border: none;
   width: 31px;
-  height: 30px;
+  height: 31px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.day-picker__item {
+  width: 31px;
+  height: 31px;
   font-size: 14px;
   line-height: 18px;
   font-family: inherit;
   font-weight: 400;
-  border: 1px solid @special-grey-border;
+  border-bottom: 1px solid @special-grey-border;
+  border-right: 1px solid @special-grey-border;
   box-sizing: border-box;
 }
 
-.day-picker__item.day-picker__item--disabled button {
-  color: @special-grey;
-  background-color: @white;
-  opacity: 0.3;
+.day-picker__item--side {
+  border-left: 1px solid @special-grey-border;
 }
 
-.day-picker__item--chosen button {
+.day-picker__item--border {
+  border-top: 1px solid @special-grey-border;
+
+  &:first-child {
+    border-left: 1px solid @special-grey-border;
+  }
+}
+
+.day-picker__item--chosen {
   background-color: @basic-blue-light;
-  color: @white;
+  box-sizing: border-box;
+
+  button {
+    color: @white;
+  }
+
+  &:hover {
+    border: 2px solid red;
+    overflow: hidden;
+  }
 }
 
-// .day-picker__item--current {
-//   // border: 2px solid red;
-// }
-
-.day-picker__item.day-picker__item--next button {
-  font-weight: 500;
-  color: @basic-blue-light;
+.day-picker__item--next {
   background-color: @special-grey-background;
+
+  &:nth-child(2) {
+    border-left: 1px solid @special-grey-border;
+  }
+
+  button {
+    font-weight: 500;
+    color: @basic-blue-light;
+  }
 }
 
-.weekday-picker__item.weekday-picker__item--weekend button {
+.weekday-picker__item.weekday-picker__item--weekend {
   color: @red;
 }

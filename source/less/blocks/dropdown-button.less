@@ -2,6 +2,7 @@
   position: relative;
   border: none;
   background-color: transparent;
+  font-family: inherit;
   margin: 0;
   padding: 0;
   display: flex;
@@ -29,16 +30,19 @@
   position: relative;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: @basic-blue-light;
+  letter-spacing: 0.09em;
+  font-family: inherit;
   border: 1px solid @special-grey-border;
   border-radius: 4px;
-  padding: 12px 7px 10px 11px;
+  box-sizing: border-box;
+  padding: 12px 7px 9px 9px;
   background-color: @white;
+  display: flex;
   text-transform: uppercase;
   white-space: nowrap;
-  display: flex;
-  width: 144px;
+  width: 170px;
 
   &:hover {
     border: 1px solid @grey-qty-hov;
@@ -60,7 +64,7 @@
   }
 
   &:last-child {
-    width: 199px;
+    width: 220px;
 
     &::after {
       content: "";
@@ -73,7 +77,7 @@
       border: 1px solid @special-grey-border;
       box-sizing: border-box;
       background-color: @white;
-      z-index: 2; 
+      // z-index: 2; 
     }
   }
 }
@@ -97,6 +101,6 @@
   border: 1px solid @special-grey-border;
   background-color: @white;
   border-radius: 4px;
-  padding: 9px;
+  padding: 8px 7px;
   z-index: 1;
 }
