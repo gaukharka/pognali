@@ -29,6 +29,17 @@
     border-radius: 50%;
     box-sizing: border-box;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 51px;
+    height: 27px;
+    background-color: @special-grey-background;
+    z-index: 1;
+  }
 }
 
 .upload-form__number {
@@ -43,6 +54,7 @@
   border-bottom: 1px solid @basic-grey-line;
   width: 40px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .upload-form__text {

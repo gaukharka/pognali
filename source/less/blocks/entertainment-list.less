@@ -25,8 +25,6 @@
   }
 }
 
-
-
 .entertainment-list__textarea {
   position: relative;
   width: 100%;
@@ -53,8 +51,8 @@
     color: @special-grey;
     opacity: 0.3;
 
-    &:active {
-      opacity: 0;           //   Не совсемя поняла как изменить непрозрачность при hover 
+    &:focus::placeholder {
+      opacity: 1;           //   Не совсемя поняла как изменить непрозрачность при hover 
     }
   }
 
@@ -62,24 +60,42 @@
     border: 1px solid @grey-qty-hov;
   }
 
-  &:active {
+  &:focus {
     border: 1px solid @basic-blue;
   }
 }
 
 // Vertical line
 
-.entertainment-list__item:first-child {
+// .entertainment-list__item:first-child {
+//   position: relative;
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 283px;
+//     top: 153px;
+//     left: -155px;
+//     border-bottom: 2px solid @basic-blue;
+//     transform: rotate(90deg);
+//   }
+// }
+
+.entertainment-list__item {
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    width: 283px;
-    top: 153px;
-    left: -155px;
-    border-bottom: 2px solid @basic-blue;
-    transform: rotate(90deg);
+    width: 2px;
+    top: 11px;
+    left: -14px;
+    bottom: -10px;
+    background-color: @basic-blue;
+  }
+
+  &:last-child::after {       
+    display: none;
   }
 }
 
@@ -92,25 +108,36 @@
     content: "";
     position: absolute;
     width: 12px;
-    top: 8px;
+    top: 7px;
     left: -14px;
     border-bottom: 2px solid @basic-blue;
   }
-}
 
-// Horizontal buttons
- 
-.entertainment-list__item {
-  position: relative;
-
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     width: 6px;
     height: 6px;
-    top: 20px;
-    left: 140px;
+    top: 6px;
+    left: -5px;
     border-radius: 50%;
-    border-color: @basic-blue;
+    background-color: @basic-blue;
   }
 }
+
+// Horizontal buttons
+
+// .entertainment-list__item label {
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     width: 6px;
+//     height: 6px;
+//     top: 20px;
+//     left: 140px;
+//     border-radius: 50%;
+//     border-color: @basic-blue;
+//   }
+// }
