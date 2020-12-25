@@ -1,0 +1,31 @@
+.filter-box {
+  border-top: 1px solid @special-yellow-ln;
+  padding-bottom: 9px;
+  padding-top: 12px;
+}
+
+.filter-box__button {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  color: @basic-blue-light;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  padding-left: 0;
+  padding-bottom: 17px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    top: 6px;
+    left: 260px;
+    background-image: url('../../img/filter_closed.svg');
+    background-repeat: no-repeat;
+  }
+}

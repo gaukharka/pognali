@@ -1,0 +1,39 @@
+.catalog-more {
+  background-position: top center;
+}
+
+.catalog-more__wrapper {
+  .wrapper();
+}
+
+.catalog-more__button {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  font-family: inherit;
+  color: @basic-blue;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 14px;
+    height: 2px;
+    background-color: @basic-blue;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 14px;
+    height: 2px;
+    background-color: @basic-blue;
+    transform: rotate(90deg);
+  }
+}
