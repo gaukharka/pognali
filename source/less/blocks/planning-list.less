@@ -1,0 +1,175 @@
+.planning-list__item {
+  padding: 24px 25px 17px 25px;
+  background-color: @white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.planning-list__step label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planning-list__title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: @basic-blue-light;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.planning-list__description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: @special-grey;
+  padding-bottom: 20px;
+}
+
+.planning-list__text {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: @basic-blue-light;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  letter-spacing: 0.09em;
+}
+
+.planning-list__input {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border: 1px solid @special-grey-border;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 21px;
+
+  &:hover {
+    border: 1px solid @grey-qty-hov;
+  }
+
+  &:active {
+    border: 1px solid @basic-blue;
+  }
+}
+
+.planning-list__input-input {
+  text-align: center;
+  border: none;
+}
+
+//  Minus Buttons
+
+.planning-list__button {
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: @white;
+  cursor: pointer;
+}
+
+.planning-list__button--minus {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 14px;
+    height: 2px;
+    background-color: @grey;
+
+    &:hover::before {
+      background-color: @grey-qty-hov;
+    }
+
+    &:active {
+      background-color: @basic-blue;
+    }
+  }
+}
+
+// Plus Buttons
+
+.planning-list__button--plus {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 14px;
+    height: 2px;
+    background-color: @grey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 14px;
+    height: 2px;
+    background-color: @grey;
+    transform: rotate(90deg);
+  }
+}
+
+.planning-list__checkbox {
+  padding-bottom: 27px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-top: 5px;
+
+  label {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: @basic-blue-light;
+    padding-left: 40px;
+  }
+}
+
+// Checkbox
+
+.planning-list__checkbox-block + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid @special-grey-border;
+  border-radius: 4px;
+}
+
+.planning-list__checkbox-block:hover + label::before {
+  border: 1px solid @grey-qty-hov;
+}
+
+.planning-list__checkbox-block:active + label::before {
+  background-color: @special-grey-down;
+  border: none;
+}
+
+// checkmark
+
+.planning-list__checkbox-block:checked + label::before {
+  background-image: url("../../img/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.planning-list__country {
+  position: relative;
+}

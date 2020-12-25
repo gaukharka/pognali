@@ -1,0 +1,80 @@
+.add-country {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 24px;
+
+  // downmenu dot
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 17px;
+    left: -53px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid @special-grey-border;
+    box-sizing: border-box;
+    background-color: transparent;
+
+    &:hover {
+      background-color: @special-background-grey;
+      opacity: 0.3;
+    }
+  }
+}
+
+.add-country__text {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: @basic-blue-light;
+  letter-spacing: 0.1em;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 12px 7px 11px 11px;
+  background-color: @special-grey-background;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: flex;
+  width: 202px;
+
+  &:hover {
+    background-color: @special-background-grey;
+  }
+
+  &:active {
+    background-color: @special-background-grey;
+  }
+
+  // downmenu arrow
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 2px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/dropdown_plus.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    stroke: @black;
+
+    &:hover {
+      stroke: @black;
+      opacity: 0.3;
+    }
+
+    &:active {
+      stroke: @black;
+      opacity: 0.1;
+    }
+  }
+}

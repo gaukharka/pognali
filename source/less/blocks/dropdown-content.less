@@ -1,0 +1,84 @@
+.dropdown__content {
+  display: none;
+  margin-top: -22px;
+  margin-bottom: 20px;
+}
+
+.dropdown__content-list-countries {
+  padding: 20px;
+}
+
+// Letters
+
+.dropdown__content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.dropdown__content-item button {
+  border: none;
+  width: 44px;
+  height: 42px;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid @grey-qty-hov;
+    box-sizing: border-box;
+  }
+
+  &:active {
+    background-color: @basic-blue-light;
+    color: @white;
+  }
+}
+
+.dropdown__content-item {
+  width: 44px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: inherit;
+  font-weight: 400;
+  border-bottom: 1px solid @special-grey-border;
+  border-right: 1px solid @special-grey-border;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.dropdown__content-item--side {
+  border-left: 1px solid @special-grey-border;
+}
+
+// Coгntries
+
+.dropdown__content-name button {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: inherit;
+  font-weight: 400;
+  color: @special-grey;
+  border: none;
+  background-color: transparent;
+  padding: 0 19px;
+
+  &:hover {
+    color: @basic-blue-light;
+  }
+
+  &:active {
+    color: @basic-blue-light;
+    opacity: 0.3;
+  }
+}
+
+.dropdown__content-item--current {
+  background-color: @special-grey-background;
+}
+
+.dropdown__content-country li {
+  padding-bottom: 4px;
+}

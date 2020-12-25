@@ -1,0 +1,106 @@
+.dropdown__button {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 22px;
+
+  // downmenu arrow
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 60px;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/dropdown-arrow.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 3;
+  }
+}
+
+.dropdown__button-text {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: @basic-blue-light;
+  letter-spacing: 0.09em;
+  font-family: inherit;
+  border: 1px solid @special-grey-border;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 7px 9px 9px;
+  background-color: @white;
+  display: flex;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 170px;
+
+  &:hover {
+    border: 1px solid @grey-qty-hov;
+  }
+
+  // downmenu dot
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: @basic-blue-light;
+    z-index: 2;
+  }
+
+  &:last-child {
+    width: 220px;
+
+    &::after {
+      content: "";
+      position: relative;
+      top: 4px;
+      right: -20px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid @special-grey-border;
+      box-sizing: border-box;
+      background-color: @white;
+      // z-index: 2; 
+    }
+  }
+}
+
+// Arrow between button blocks  Но этого элемента не видно
+
+// .dropdown-menu__block::after {
+//   content: "";
+//   position: relative;
+//   top: 100px;
+//   left: 20px;
+//   width: 30px;
+//   height: 30px;
+//   background: url("../../img/arrow-down.svg");
+//   background-repeat: no-repeat;
+//   // opacity: 0.3;
+// }
+
+.dropdown__button-flag {
+  position: relative;
+  border: 1px solid @special-grey-border;
+  background-color: @white;
+  border-radius: 4px;
+  padding: 8px 7px;
+  z-index: 1;
+}

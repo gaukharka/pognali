@@ -1,0 +1,44 @@
+.close-button {
+  position: absolute;
+  top: -10px;
+  right: -9px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: @special-grey-background;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 5;
+}
+
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  width: 9px;
+  height: 1px;
+  background-color: @black;
+  opacity: 0.1;
+  z-index: 4;
+
+  &:hover {
+    background-color: @black;
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: @black;
+    opacity: 0.05;
+  }
+}
+
+.close-button::before {
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  transform: rotate(-45deg);
+}
