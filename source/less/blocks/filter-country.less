@@ -3,9 +3,14 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   padding: 33px 0 15px 0;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
-.filter-country__wrapper {
+.filter-country__toggle-wrapper {
   .wrapper();
 }
 
@@ -38,4 +43,36 @@
   svg {
     padding-bottom: 4px;
   }
+}
+
+// Region
+
+.filter-country__regions-wrapper {
+  .wrapper();
+  padding: 0 50px;
+  padding-bottom: 28px;
+}
+
+// Close button
+
+.filter-country__close-wrapper {
+  .wrapper();
+  padding-bottom: 28px;
+}
+
+.filter-country__close-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: inherit;
+  color: @basic-dark-navy;
+  border: none;
+  background-color: @basic-grey-btn;
+  padding: 12px;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  // margin-left: -25px;
 }
