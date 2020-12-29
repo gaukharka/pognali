@@ -1,7 +1,7 @@
 .transport-list {
   display: flex;
   align-content: center;
-  justify-content: center;
+  // justify-content: center;
   padding: 15px;
   margin: 0;
 }
@@ -58,7 +58,7 @@
   left: -200%;
 }
 
-// Transport Buttons (Form & Catalog)
+// Transport Buttons (Form)
 
 .transport-list__button {
   width: 32px;
@@ -68,24 +68,67 @@
   border-radius: 50%;
   border: none;
   background-color: @white;
-  fill: @special-icon-grey;
+
+  path {
+    fill: @special-icon-grey;
+  }
 
   &:hover path {
     fill: @special-grey-hov;
-    opacity: 1;
   }
 
   &:active path {
-    background-color: @special-grey-down;
-    opacity: 0.3;
     fill: @basic-blue-light;
+    background-color: @special-grey-down;
+    opacity: 0.1;
   }
 }
 
-.transport-list__button--active {
-  path {
+.transport-list__button--active path {
+  fill: @basic-blue-light;
+  opacity: 1;
+
+  &:hover path {
     fill: @basic-blue-light;
+    opacity: 0.7;
   }
+
+  &:active path {
+    fill: @basic-blue-light;
+    background-color: @special-grey-down;
+    opacity: 0.3;
+  }
+}
+
+// Transport Buttons (Catalog)
+
+.transport-list__button-catalog {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background-color: @special-grey-background;
+
+  path {
+    fill: @special-icon-grey;
+  }
+
+  &:hover path {
+    fill: @special-grey-hov;
+  }
+
+  &:active path {
+    fill: @basic-blue-light;
+    background-color: @special-grey-down;
+    opacity: 0.1;
+  }
+}
+
+.transport-list__button-catalog--active path {
+  fill: @basic-blue-light;
+  opacity: 1;
 
   &:hover path {
     fill: @basic-blue-light;

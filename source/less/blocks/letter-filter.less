@@ -1,0 +1,40 @@
+.letter-filter {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+}
+
+.letter-filter__list {
+  display: none;
+}
+
+.letter-filter__link {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: @basic-dark-navy;
+  box-sizing: border-box;
+  background-color: @white;
+  width: 44px;
+  height: 40px;
+  padding: 14px;
+  display: inline-block;
+  vertical-align: top;
+  border-bottom: 1px solid @special-grey-border;
+  border-right: 1px solid @special-grey-border;
+}
+
+.letter-filter__link--current {
+  color: @white;
+  background-color: @basic-blue-light;
+}
+
+.letter-filter__list-link {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: inherit;
+  color: @special-grey;
+}

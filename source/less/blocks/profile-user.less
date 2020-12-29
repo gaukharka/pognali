@@ -1,0 +1,38 @@
+.profile-user {
+  position: relative;
+  display: flex;
+  // padding-right: 5px;
+  padding-bottom: 13px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 8px;
+    right: 10px;
+    background-color: @special-red;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+}
+
+.profile-user__online::after {
+  background-color: @special-green;
+}
+
+.profile-user__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: @basic-blue-light;
+  padding-right: 80px;
+  margin-left: -29px;
+}
+
+.profile-user__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
