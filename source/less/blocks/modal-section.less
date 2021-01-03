@@ -2,19 +2,33 @@
   display: none;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: lightgrey;
+  background-color: @special-grey-background;
   background-position: top center;
-  width: 270px;
 
   ul {
     list-style: none;
     padding-left: 0;
-    padding-bottom: 23px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 40px;
+    background-color: @special-grey-background;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 363px;
+    background-color: @special-grey-background;
   }
 }
 
 .modal-section__wrapper {
   .wrapper();
+  padding: 0 50px;
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+    padding: 0 130px;
+  }
 }
 
 .modal-section__title {
@@ -25,20 +39,35 @@
   text-align: center;
   padding: 34px 0 28px 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    padding: 54px 0 61px 0;
+  }
 }
 
 .modal-section__list {
   position: relative;
+  margin: 0;
+  padding-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 42px;
+  }
 }
 
 .modal-section__item {
   position: relative;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Bloger Sans Lighter";
+  font-weight: 300;
   color: @special-grey;
   padding-bottom: 22px;
-  padding-right: 50px;
+  // padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   &::before {
     content: "";
@@ -47,21 +76,34 @@
     top: -15px;
     left: 0;
     border-bottom: 1px solid @special-grey-line;
+
+    @media (min-width: @tablet-width) {
+      width: 506px;
+    }
   }
 
   &:last-child::after {
     content: "";
     position: absolute;
     width: 219px;
-    top: 60px;
+    top: 40px;
     left: 0;
     border-bottom: 1px solid @special-grey-line;
+
+    @media (min-width: @tablet-width) {
+      width: 506px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
 .modal-section__button {
   display: block;
-  width: 260px;
+  margin: 0 auto;
   padding: 21px 5px;
   background-color: @special-grey-modal;
   text-align: center;
@@ -70,6 +112,8 @@
   font-weight: 700;
   text-transform: uppercase;
   color: @basic-blue-light;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   &:hover {
     background-color: @basic-grey;
@@ -77,5 +121,17 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 41px 5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 41px 5px;
   }
 }

@@ -11,10 +11,30 @@
   margin-bottom: -30px;
   z-index: 1;
   padding: 62px 0 36px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 72px 0 84px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
 }
 
 .map-section__wrapper {
   .wrapper();
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop();
+    padding: 0 135px 0 283px;
+  }
 }
 
 .map-section__wrapper-map {
@@ -27,6 +47,11 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+    padding-bottom: 44px;
+  }
 }
 
 .map-section__street {
@@ -36,6 +61,11 @@
   color: @basic-blue-light;
   margin-right: 25px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .map-section__map-mark {
@@ -43,6 +73,19 @@
   background-color: @basic-blue-light;
   border-radius: 50%;
   margin-right: 16px;
+
+
+  @media (min-width: @tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 42px;
+    height: 42px;
+    padding: 24px 24px 22px 24px;
+
+  }
 }
 
 // Button 

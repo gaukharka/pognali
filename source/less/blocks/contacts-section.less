@@ -16,15 +16,32 @@
 
 .contacts-section__wrapper {
   .wrapper();
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop();
+    padding: 0 133px 0 133px;
+  }
 }
 
 .contacts-section__block {
   padding: 100px 0 30px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 133px 0 60px 0;
+  }
 }
 
 .contacts-section__title {
   text-align: center;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 59px;
+  }
 }
 
 .contacts-section__description,
@@ -34,10 +51,23 @@
   font-weight: 300;
   color: @white;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .contacts-section__description {
   padding: 0 35px 29px 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 233px 60px 233px;
+  }
 }
 
 .contacts-section__description-link {
@@ -58,10 +88,26 @@
 
 .contacts-section__form {
   padding-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .contacts-section__question {
   padding: 0 20px 17px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 43px;
+  }
 }
 
 .contacts-section__list a {
@@ -95,6 +141,11 @@
   border: none;
   outline: none;
   border-radius: 10px;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    width: 97%;
+  }
 }
 
 .contacts-section__form-button {

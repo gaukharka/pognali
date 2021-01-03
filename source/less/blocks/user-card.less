@@ -18,6 +18,10 @@
 
 .user-card__block {
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    overflow: hidden;
+  }
 }
 
 .user-card {
@@ -31,26 +35,38 @@
     img {
       transform: scale(1.005);
       width: 100%;
+
+      // @media (min-width: @tablet-width) {
+      //   transform: scale(1.005);
+      //   width: 100%;
+      // }
     }
   }
 }
 
 .user-card__description {
   position: relative;
-  background-color: @white; 
+  background-color: @white;
   padding: 0 20px 15px 20px;
   text-align: center;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   margin-top: -5px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px 12px 20px;
+    width: 245px;
+  }
 }
+
+// Flags
 
 .user-card__flags {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-bottom: 11px;
-  
+
   svg {
     margin-top: -40px;
   }
@@ -63,6 +79,8 @@
     margin-right: 0;
   }
 }
+
+// User Name
 
 .user-card__name {
   font-size: 21px;
@@ -91,6 +109,11 @@
     vertical-align: middle;
     margin-right: 10px;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+  }
 }
 
 .user-card__name--offline::before {
@@ -101,11 +124,17 @@
   background: green;
 }
 
+// Tags
+
 .user-card__tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 20px 14px 31px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 9px 0;
+  }
 }
 
 .user-card__item {
@@ -116,5 +145,16 @@
     line-height: 18px;
     font-weight: 400;
     color: @special-grey;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
+}
+
+.user-card__transport {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
 }

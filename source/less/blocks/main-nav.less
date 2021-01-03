@@ -8,10 +8,19 @@
     list-style: none;
     padding-left: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 91px;
+  }
 }
 
 .main-nav__wrapper {
   .wrapper();
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+    padding-top: 25px;
+  }
 }
 
 .main-nav__list {

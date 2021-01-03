@@ -36,11 +36,13 @@
   padding-top: 25px;
 
   @media (min-width: @tablet-width) {
-  
+    .wrapper-tablet();
+    padding-top: 25px;
   }
 
   @media (min-width: @desktop-width) {
-    
+    .wrapper-desktop();
+    padding-top: 46px;
   }
 }
 
@@ -83,4 +85,8 @@
   // &::after {
   //   transform: rotate(-45deg);
   // }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

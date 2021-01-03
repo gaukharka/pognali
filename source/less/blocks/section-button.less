@@ -8,18 +8,30 @@
   display: block;
   border-radius: 10px;
   background-color: @basic-yellow;
-  
+
   &:hover {
     background-color: @special-yellow-dark;
   }
     
   &:active {
     color: @basic-blue-light;
-    opacity: .3;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 31px 32px 27px 32px;
+    display: flex;
+    justify-content: space-between;
   }
 }
-  
+
 .section-button svg {
   vertical-align: middle;
-  margin-left: 99px;
+  margin-left: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 3px;
+  }
 }
