@@ -12,11 +12,11 @@
   .wrapper();
 
   @media (min-width: @tablet-width) {
-    .wrapper-tablet();
+    padding: 0 40px;
   }
 
   @media (min-width: @desktop-width) {
-    .wrapper-desktop();
+    // .wrapper-desktop();
     padding: 0 133px 0 70px;
   }
 }
@@ -24,6 +24,27 @@
 .pricelist-section__block {
   position: relative;
   padding: 38px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    right: 0;
+    background-image: url("../../img/rates.png");
+
+    @media (min-width: @tablet-width) {
+      top: 470px;
+      right: 45px;
+      z-index: 1;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 360px;
+      right: 45px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 60px 0 85px 0;
@@ -154,27 +175,6 @@
 
 .pricelist-section__title {
   padding: 45px 110px 47px 25px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 70px;
-    right: 0;
-    background-image: url("../../img/rates.png");
-
-    @media (min-width: @tablet-width) {
-      top: 470px;
-      right: 45px;
-      z-index: 1;
-    }
-
-    @media (min-width: @desktop-width) {
-      top: 360px;
-      right: 45px;
-    }
-  }
 
   @media (min-width: @tablet-width) {
     text-align: center;

@@ -31,17 +31,15 @@
 // Logo
 
 .page-header__block {
-  position: relative;
   .wrapper();
-  padding-top: 25px;
+  position: relative;
+  padding: 25px 25px 0 25px;
 
   @media (min-width: @tablet-width) {
-    .wrapper-tablet();
-    padding-top: 25px;
+    padding: 45px 40px 0 40px;
   }
 
   @media (min-width: @desktop-width) {
-    .wrapper-desktop();
     padding-top: 46px;
   }
 }
@@ -50,8 +48,7 @@
   padding: 0;
   position: absolute;
   top: 25px;
-  right: 0;
-  left: 270px;
+  right: 25px;
   width: 24px;
   height: 24px;
   background-color: transparent;
@@ -85,6 +82,12 @@
   // &::after {
   //   transform: rotate(-45deg);
   // }
+
+
+  @media (min-width: @tablet-width) {
+    right: 371px;
+    top: 45px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;

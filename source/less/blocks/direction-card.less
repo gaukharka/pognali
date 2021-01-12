@@ -1,7 +1,6 @@
 .direction-card__description-block {
   display: flex;
   justify-content: space-between;
-  height: 40px;
 
   @media (min-width: @tablet-width) {
     display: inline;
@@ -24,7 +23,7 @@
 
     @media (min-width: @tablet-width) {
       order: 2;
-      margin-right: -43px;
+      margin-right: -60px;
       padding-top: 20px;
     }
 
@@ -40,7 +39,7 @@
     margin-right: -30px;
     display: flex;
     justify-content: space-between;
-    padding: 30px 27px 63px 26px;
+    padding: 30px 27px 20px 26px;
   }
 
   // @media (min-width: @desktop-width) {
@@ -99,11 +98,21 @@
     padding: 0 5px 0 0;
     vertical-align: middle;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 24px;
+      height: auto;
+    }
   }
 }
 
 .direction-card__flag {
   padding-left: 25px;
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: auto;
+  }
 }
 
 .directions-list__item:last-child {
