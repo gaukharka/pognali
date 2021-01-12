@@ -26,6 +26,11 @@
   transition: transform 0.3s ease;
   background-color: @white;
   background-position: top center;
+
+  @media (min-width: @desktop-width) {
+    transform: none;
+    transition: none;
+  }
 }
 
 // Logo
