@@ -12,10 +12,6 @@
     padding-left: 0;
   }
 
-  @media (min-width: @tablet-width) {
-   
-  }
-
   @media (min-width: @desktop-width) {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -109,6 +105,10 @@
 
 .country-section__button-wrapper {
   .wrapper();
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 80px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 1440px;

@@ -46,14 +46,24 @@
 
   @media (min-width: @desktop-width) {
     padding: 46px 60px 0 60px;
+    // background-image: url("../../img/logo-tablet.png");
+    // background-repeat: no-repeat;
+
+    // a {
+    //   // display: none;
+    // }
   }
 }
 
 .page-header__blocks {
   .wrapper();
 
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 1440px;
+    padding: 0;
   }
 }
 
